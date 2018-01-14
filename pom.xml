@@ -11,10 +11,6 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 	</properties>
-	<configuration>
-                <source>1.8</source>
-                <target>1.8</target>
-            </configuration>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
