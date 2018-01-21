@@ -15,7 +15,7 @@ public class DatabaseAccessObject {
             
                 Class.forName("com.mysql.jdbc.Driver");
                 //con = DriverManager.getConnection("jdbc:mysql://127.11.159.2:3306/chauhantraders", "adminMAxt2wl", "r29F3Ahpy4Qc");
-                con = DriverManager.getConnection("jdbc:mysql://172.30.13.145:3306/chauhantraders", "ankur", "java");
+                con = DriverManager.getConnection("jdbc:mysql://172.30.22.243:3306/chauhantraders", "ankur", "java");
                 return con;
             }
         
