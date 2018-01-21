@@ -145,7 +145,11 @@
           <h2>Testimonials</h2>
           
           <table width="100%" >
-          <%Connection con=DatabaseAccessObject.toConnect();
+          <%
+          try{
+        	  
+          
+          Connection con=DatabaseAccessObject.toConnect();
           String query="select name,msg from testimonials where status='1' order by sn desc limit 10;";
           int i=0;
           ResultSet rs=DatabaseAccessObject.toSelect(query, con.createStatement());
@@ -174,6 +178,9 @@
               
               </tr>
           <%
+          }
+          }catch(Exception e){
+        	  e.printStackTrace();
           }
           %>
           </table>
